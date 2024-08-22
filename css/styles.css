@@ -337,3 +337,74 @@ body {
   #spirit_avionics {
     background: url(../assets/stretch.png);
   }
+/* Contact Form Styles */
+.contact-form {
+  background-color: #141414; /* Dark background to match the site's theme */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); /* Soft glow */
+  max-width: 600px;
+  margin: 50px auto; /* Centering the form */
+  font-family: "Montserrat", sans-serif;
+  color: #fff; /* White text for contrast */
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #ffffff; /* White text */
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #444; /* Border that fits the dark theme */
+  border-radius: 4px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #888; /* Lighter border on focus */
+}
+
+.contact-form button {
+  background-color: rgb(120, 120, 255); /* Button color matching other elements */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: rgb(150, 150, 255); /* Lighter color on hover */
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 800px) {
+  .contact-form {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+}
