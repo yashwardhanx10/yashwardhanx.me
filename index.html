@@ -28,21 +28,23 @@
                     <li><a href="#about">./<b>about</b></a></li>
                     <li><a href="https://github.com/yashwardhan9">./<b>projects</b></a></li>
                     <li><a href="https://substack.com/@yashwardhansingh1">./<b>blog</b></a></li>
-                    <li><a href="#contact">./<b>Contact</b></a></li>
+                    <li><a href="#contact">./<b>contact</b></a></li>
                 </ul>
             </nav>
 
             <p class="menu cta">Menu</p>
         </header>
+        
         <div id="mobile__menu" class="overlay">
             <a class="close">&times;</a>
             <div class="overlay__content">
                 <a href="pages/about.html">About</a>
                 <a href="https://github.com/yashwardhan9">Projects</a>
                 <a href="https://substack.com/@yashwardhansingh1">Blog</a>
-                <a href="pages/contact.html">Contact</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
+
         <script type="text/javascript" src="js/mobile.js"></script>
 
         <div id="transition_bottom">
@@ -68,7 +70,7 @@
             <br>
             <p>
                 <center>
-                    <a href="mailto:yashwardhansingh0710@gmail.com">yashwardhansingh0710!gmail.com</a> -
+                    <a href="mailto:yashwardhansingh0710@gmail.com">yashwardhansingh0710@gmail.com</a> -
                     <a href="files\0x0E3AE512-pub.asc">PGP</a> -
                     <a href="https://twitter.com/yashwardhxn_9">Yashwardhan</a>
                 </center>
@@ -79,29 +81,27 @@
         <div id="transition_bottom">
             <h1></h1>
         </div>
-        
 
-        <footer class="footer-contact">
-  <div class="container">
-    <h2></h2>
-    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-      <label for="name">Name</label>
-      <input type="hidden" name="access_key" value="0875ed9c-1e2e-42fd-a3a3-71387237a949">
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</footer>
+        <!-- Contact Me Section -->
+        <footer id="contact" class="footer-contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="0875ed9c-1e2e-42fd-a3a3-71387237a949">
+                    
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </footer>
 
     </body>
-    
-
-
 </html>
