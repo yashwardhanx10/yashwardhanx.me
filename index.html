@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script type="importmap">
     {
         "imports": {
@@ -21,39 +23,40 @@
 <body>
     <script type="module" src="js/animation.js"></script>
 
-    <header id="landing_page_header">
+    <header id="landing_page_header" class="d-flex justify-content-between align-items-center p-3">
         <a class="logo" href="/"><img src="assets/yashwardhxns.png" alt="logo" width="150px"></a>
-        <nav>
-            <ul class="nav__links">
+        <nav class="d-none d-md-block">
+            <ul class="nav__links list-unstyled d-flex">
                 <li><a href="#about">./<b>about</b></a></li>
-                <li><a href="assets/Yashwarshan's Resume.pdf">./<b>Resume</b></a></li>
+                <li><a href="assets/Yashwarshan%20Resume.pdf">./<b>Resume</b></a></li>
                 <li><a href="https://www.linkedin.com/in/yashwardhan-singh-23538b28a/">./<b>Linkedin</b></a></li>
                 <li><a href="https://x.com/Yashwardhxn_9">./<b>X</b></a></li>
                 <li><a href="https://github.com/yashwardhanx10">./<b>Github</b></a></li>
                 <li><a href="https://yashwardhans-newsletter-329cd3.beehiiv.com/">./<b>Newsletter</b></a></li>
             </ul>
         </nav>
-
-        <p class="menu cta">Menu</p>
+        <button class="menu cta btn btn-primary d-md-none">Menu</button>
     </header>
+
     <div id="mobile__menu" class="overlay">
         <a class="close">&times;</a>
         <div class="overlay__content">
             <a href="#about">About</a>
-            <li><a href="assets/Yashwarshan's Resume.pdf"><b>Resume</b></a></li>
+            <li><a href="assets/Yashwarshan%20Resume.pdf"><b>Resume</b></a></li>
             <a href="https://x.com/Yashwardhxn_9">X</a>
             <a href="https://www.linkedin.com/in/yashwardhan-singh-23538b28a/">Linkedin</a>
             <a href="https://github.com/yashwardhanx10">Github</a>
             <a href="https://yashwardhans-newsletter-329cd3.beehiiv.com/">Newsletter</a>
         </div>
     </div>
+
     <script type="text/javascript" src="js/mobile.js"></script>
 
     <div id="transition_bottom">
         <h1></h1>
     </div>
 
-    <div class="about">
+    <div class="about container mt-5">
         <h1 id="about">About Me</h1>
         <br>
         <p>
@@ -68,17 +71,18 @@
             Building!
             <br><br>
         </p>
-        <button onclick="window.location.href='assets/Yashwarshan%20Resume.pdf'" id="resume_button">Résumé</button>
+        <button onclick="window.location.href='assets/Yashwarshan%20Resume.pdf'" id="resume_button" class="btn btn-primary">Résumé</button>
         <br>
-        <p>
-            <center>
-                <a href="mailto:yashwardhan.inbox@gmail.com">yashwardhan.inbox@gmail.com</a>  - 
-                <a href="https://www.linkedin.com/in/yashwardhansingh10/">Linkedin</a>  -
-                <a href="https://twitter.com/yashwardhxn_9">X</a>
-            </center>
-            <br><br>
+        <p class="text-center mt-4">
+            <a href="mailto:yashwardhan.inbox@gmail.com">yashwardhan.inbox@gmail.com</a>  - 
+            <a href="https://www.linkedin.com/in/yashwardhansingh10/">Linkedin</a>  -
+            <a href="https://twitter.com/yashwardhxn_9">X</a>
         </p>
     </div>
 
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
